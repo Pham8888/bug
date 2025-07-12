@@ -24,11 +24,11 @@ if (isset($_POST['login'])) {
 
         // Kiểm tra nếu dùng password_hash
         if (password_verify($password, $dbHash)) {
-            // ✅ Mật khẩu mới – cho đăng nhập
+            // Mật khẩu mới – cho đăng nhập
         } 
         // Kiểm tra nếu là MD5 cũ
         else if ($dbHash === md5($password)) {
-            // ✅ Mật khẩu cũ đúng → nâng cấp sang password_hash
+            // Mật khẩu cũ đúng → nâng cấp sang password_hash
             $newHash = password_hash($password, PASSWORD_DEFAULT);
             $updateStmt = $conn->prepare("UPDATE users SET password = ? WHERE id = ?");
             $updateStmt->bind_param("si", $newHash, $user['id']);
