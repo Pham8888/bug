@@ -1,10 +1,10 @@
-# 🎬 Website Xem Phim
+# Website Phim
 
 Đây là một website xem phim đơn giản sử dụng PHP, MySQL và HTML/CSS, được xây dựng để phục vụ mục đích học tập, thực hành lập trình web và mô phỏng các lỗi bảo mật phổ biến theo tiêu chuẩn [OWASP Top 10](https://owasp.org/Top10/).
 
 ---
 
-## 🧩 Chức năng chính
+## Chức năng chính
 
 ### Người dùng:
 - Đăng ký, đăng nhập, đăng xuất
@@ -22,7 +22,7 @@
 
 ---
 
-## 🗂️ Cấu trúc thư mục
+##  Cấu trúc thư mục
 
 bug/
 ├── admin/ # 📂 Trang quản trị
