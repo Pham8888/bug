@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {
     exit();
 }
 
-// Thao t\u00e1c xo\u00e1 phim
+// Thao tác xóa phim 
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
     mysqli_query($conn, "DELETE FROM movies WHERE id = $id");
@@ -16,7 +16,7 @@ if (isset($_GET['delete'])) {
     exit();
 }
 
-// L\u1ea5y phim c\u1ea7n s\u1eeda (n\u1ebfu c\u00f3)
+// lấy thông tin phim cần sửa (nếu có)
 $edit_id = isset($_GET['edit']) ? intval($_GET['edit']) : 0;
 $edit_data = null;
 if ($edit_id > 0) {
@@ -24,7 +24,7 @@ if ($edit_id > 0) {
     $edit_data = mysqli_fetch_assoc($res);
 }
 
-// X\u1eed l\u00fd th\u00eam phim
+// xử lý thêm phim mới
 if (isset($_POST['add'])) {
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $desc = mysqli_real_escape_string($conn, $_POST['description']);
@@ -51,7 +51,7 @@ if (isset($_POST['add'])) {
     exit();
 }
 
-// 
+// cập nhật phim
 if (isset($_POST['update'])) {
     $id = intval($_POST['id']);
     $title = mysqli_real_escape_string($conn, $_POST['title']);
