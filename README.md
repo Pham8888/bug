@@ -24,7 +24,7 @@
 
 ##  Cấu trúc thư mục
 
--- admin/ # 📂 Trang quản trị
+### admin/ # 📂 Trang quản trị
 - dashboard.php # Bảng điều khiển admin
 - movie_manage.php # Quản lý phim (thêm/sửa/xóa)
 - episode_manage.php # Quản lý từng tập phim
@@ -33,13 +33,13 @@
 - contact_manage.php # Quản lý liên hệ từ người dùng
 - comment_manage.php # Quản lý bình luận (xóa)
 
--- main/ # 📂 Đăng nhập / đăng ký / menu dùng chung
+### main/ # 📂 Đăng nhập / đăng ký / menu dùng chung
 - login.php
 - register.php
 - logout.php
 - menu.php # Menu ngang dùng toàn trang
 
--- pages/ # 📂 Trang người dùng
+### pages/ # 📂 Trang người dùng
 - index.php # Trang chủ: hiển thị danh sách phim
 - movie.php # Xem chi tiết phim + bình luận
 - forum.php # Gợi ý phim, thảo luận chung
@@ -49,11 +49,11 @@
 - contact.php # Gửi phản hồi
 - search.php # Kết quả tìm kiếm
 
--- assets/ # 📂 Tài nguyên tĩnh
+### assets/ # 📂 Tài nguyên tĩnh
 - episodes/ # Video các tập phim (mp4)
 - images/ # Ảnh poster phim
 - trailers/ # Trailer phim
 
--- config.php # ⚙️ Cấu hình thông số CSDL
--- db.php # Kết nối MySQL
--- movie_db.sql
+### config.php # ⚙️ Cấu hình thông số CSDL
+### db.php # Kết nối MySQL
+### movie_db.sql
