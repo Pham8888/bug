@@ -54,6 +54,6 @@
 - images/ # Ảnh poster phim
 - trailers/ # Trailer phim
 
-- config.php # ⚙️ Cấu hình thông số CSDL
-- db.php # Kết nối MySQL
-- movie_db.sql
+-- config.php # ⚙️ Cấu hình thông số CSDL
+-- db.php # Kết nối MySQL
+-- movie_db.sql
